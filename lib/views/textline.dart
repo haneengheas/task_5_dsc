@@ -19,7 +19,7 @@ class TextLine extends StatelessWidget {
         onChanged: (String value) {
           print(value);
         },
-       // obscureText: hidden,
+        obscureText: hidden,
         obscuringCharacter: '*',
         decoration: InputDecoration(
           prefixIcon: Icon(
