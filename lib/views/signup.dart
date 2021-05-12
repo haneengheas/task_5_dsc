@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:task_5_dsc/views/homepage.dart';
 import 'package:task_5_dsc/views/textline.dart';
+
 class SignUp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -23,18 +24,23 @@ class SignUp extends StatelessWidget {
             TextLine(
               text: 'Uesr Name',
               icon1: Icons.person_pin,
+              hidden: false,
             ),
-            TextLine(text: 'Email', icon1: Icons.mail),
+            TextLine(
+              text: 'Email',
+              icon1: Icons.mail,
+              hidden: false,
+            ),
             TextLine(
               text: 'Password',
               icon1: Icons.lock,
               icon2: Icons.remove_red_eye,
-              // hidden: true,
+              hidden: true,
             ),
             GestureDetector(
                 onTap: () {
-                  Navigator.push(
-                      context, MaterialPageRoute(builder: (context) => Homepage()));
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => Homepage()));
                 },
                 child: Container(
                   margin: EdgeInsets.all(25),
